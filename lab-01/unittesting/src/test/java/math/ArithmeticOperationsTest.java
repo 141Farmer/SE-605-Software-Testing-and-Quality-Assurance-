@@ -4,10 +4,11 @@ import static org.junit.Assert.*;
 
 public class ArithmeticOperationsTest {
 
-    private final ArithmeticOperations a = new ArithmeticOperations();
+    private ArithmeticOperations a;
 
     @org.junit.Before
     public void setUp() throws Exception {
+        a = new ArithmeticOperations();
     }
 
     @org.junit.After

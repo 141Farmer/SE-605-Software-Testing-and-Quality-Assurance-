@@ -8,10 +8,11 @@ import static org.junit.Assert.*;
 
 public class MyMathTest {
 
-    private final MyMath myMath = new MyMath();
+    private MyMath myMath;
 
     @Before
     public void setUp() throws Exception {
+        myMath = new MyMath();
     }
 
     @After

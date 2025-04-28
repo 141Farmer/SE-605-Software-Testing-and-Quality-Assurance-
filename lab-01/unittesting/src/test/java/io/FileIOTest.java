@@ -11,10 +11,11 @@ import static org.junit.Assert.*;
 
 public class FileIOTest {
 
-    private final FileIO fileIO = new FileIO();
+    private FileIO fileIO;
 
     @Before
     public void setUp() throws Exception {
+        fileIO = new FileIO();
     }
 
     @After
@@ -43,13 +44,13 @@ public class FileIOTest {
         assertArrayEquals(expected, actual);
     }
 
-    /*
-    @Test(expected = IllegalAccessException.class)
+
+    @Test(expected = IllegalArgumentException.class)
     public void readFile4() {
         int[] actual=fileIO.readFile("mpty_file.txt");
         int[] expected={};
         assertArrayEquals(expected, actual);
     }
-     */
+
 
 }

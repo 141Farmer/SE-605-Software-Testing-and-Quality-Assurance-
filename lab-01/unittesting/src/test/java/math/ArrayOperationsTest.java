@@ -9,12 +9,16 @@ import static org.junit.Assert.*;
 
 public class ArrayOperationsTest {
 
-    private final ArrayOperations arrayOperations = new ArrayOperations();
-    private final MyMath myMath = new MyMath();
-    private final FileIO fileio = new FileIO();
+    private ArrayOperations arrayOperations;
+    private MyMath myMath;
+    private FileIO fileio;
 
     @Before
     public void setUp() throws Exception {
+        arrayOperations = new ArrayOperations();
+        myMath = new MyMath();
+        fileio = new FileIO();
+
     }
 
     @After
@@ -34,6 +38,5 @@ public class ArrayOperationsTest {
         int[] expected= {2,3,5,7,11,13,17,19};
         assertArrayEquals(expected, actual);
     }
-
 
 }
